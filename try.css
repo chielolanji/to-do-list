@@ -1,0 +1,269 @@
+
+.lagayan{
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 700px;
+}
+
+
+
+.kaliwa { 
+
+    width: 20%;
+    height: 700px;
+    float: left;}
+.gitna{
+   
+    width: 60%;
+    height: 700px;
+    float: left;}
+
+.gtop{
+    
+    width: 100%;
+    height: 50px;
+}
+
+.gcenter{
+
+    
+ 
+    width: 100%;
+    height: 600px;
+    border-style: groove;
+    border-radius: 5px;
+}
+.gbottom{
+    
+    width: 100%;
+    height: 50px;
+}
+
+.kanan{
+    width: 20%;
+    height: 700px;
+    float: right;}
+    :root {
+        --dark: #374151;
+        --gray: #6B7280;
+        --light: #EEE;
+        --pink: #EC4899;
+        --purple: #8B5Cf6;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'fira sans', sans-serif;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: var(--dark);
+        color: #fff;
+    }
+    
+    header {
+        padding: 2rem 1rem;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: var(--gray);
+        margin-bottom: 1rem;
+
+    }
+
+    .action {
+        display: flex;
+        gap: 0.5rem;
+    }
+    
+    .action button {
+        background-color: silver;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .action button:hover {
+        background-color: rgb(30, 210, 171);
+    }
+
+
+    
+    
+    #new-task-form {
+        display: flex;
+    }
+    
+    input, button {
+        appearance: none;
+        border: none;
+        outline: none;
+        background: burlywood;
+        opacity: 0.6;
+        
+    }
+    
+    #new-task-input {
+        flex: 1 1 0%;
+        background-color: darkgray;
+        padding: 1rem;
+        border-radius: 10%;
+        margin-right: 1rem;
+        color: var(--light);
+        font-size: 1.25rem;
+        opacity: 0.6;
+        border-style: groove;
+
+    }
+    
+    #new-task-input::placeholder {
+        color: var(--gray);
+    }
+    
+    #new-task-submit {
+        color: aquamarine;
+        font-size: 1.25rem;
+        font-weight: 700;
+        background-image: linear-gradient(to right, blue, aquamarine);
+        --webkit-background-clip: text;
+        --webkit-text-fill-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 50%;
+    }
+    
+    #new-task-submit:hover {
+        opacity: 0.8;
+    }
+    
+    #new-task-submit:active {
+        opacity: 0.6;
+    }
+    
+    main {
+        flex: 1 1 0%;
+        padding: 2rem 1rem;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .task-list {
+        padding: 1rem;
+    }
+    
+    .task-list h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: gray;
+        margin-bottom: 1rem;
+    }
+    
+    .task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: burlywood;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content {
+        flex-grow: 1;
+    }
+    
+    
+    
+    #tasks .task .content .text {
+        color: var(--light);
+        font-size: 1.25rem;
+        width: 100%;
+        display: block;
+        transition: 0.5s;
+    }
+    
+    #tasks .task .content .text:not(:read-only) {
+        color: var(--gray);
+    }
+    
+    #tasks .task.action {
+        display: flex;
+        margin: 0 0 .5rem;
+    }
+    
+    #add-task-section {
+        padding: 1rem;
+        background-color: var(--darkest);
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #add-task-section h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--gray);
+        margin-bottom: 1rem;
+    }
+    
+.todol {
+    width: 10%;
+    height: 70px; 
+    float: left;
+    
+
+   
+  }
+
+  
+
+  #tasks .task.checked {
+    background-color: blue; 
+}
+
+#tasks .task.checked .content .text {
+    text-decoration: line-through; 
+}
+
+#tasks .task .action .check-mark {
+    color: white;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+
+
+
+.text{
+    padding-left: 170px;
+    float: left;
+    font-size: 50px;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -250px 0;
+    animation: backcolor 5s linear infinite alternate ;
+      
+  }
+@keyframes backcolor {
+    100%{
+        background-position: -0 0;
+    }
+
+}
